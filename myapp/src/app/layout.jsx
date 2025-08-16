@@ -4,7 +4,7 @@ import "../style/global.css"
 import Navbar from "../Components/Navbar"
 import Footer from "../Components/Footer"
 
-export default function RootLayout({ children }) {
+export default function Rootlayout({ children }) {
     return (
         <html lang="en">
             <body>
