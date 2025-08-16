@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/global.css"; // Make sure folder/file names match
+import "../style/global.css"; // folder/file names must match exactly
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
