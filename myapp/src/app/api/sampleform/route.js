@@ -1,32 +1,36 @@
-// app/api/mystudent/route.js
-import prisma from "@/lib/prisma";
-import { NextResponse } from "next/server";
+// // app/api/mystudent/route.js
+// import prisma from "@/lib/prisma";
+// import { NextResponse } from "next/server";
 
-export async function POST(req) {
-  try {
-    const body = await req.json();
-    const { name, email } = body;
+// export async function POST(req) {
+//   try {
+//     const body = await req.json();
+//     const { name, email } = body;
 
-    if (!name || !email) {
-      return NextResponse.json(
-        { success: false, message: "Missing fields" },
-        { status: 400 }
-      );
-    }
+//     if (!name || !email) {
+//       return NextResponse.json(
+//         { success: false, message: "Missing fields" },
+//         { status: 400 }
+//       );
+//     }
 
-    const student = await prisma.student.create({
-      data: { name, email },
-    });
+//     const student = await prisma.student.create({
+//       data: { name, email },
+//     });
 
-    return NextResponse.json({ success: true, student }, { status: 201 });
-  } catch (error) {
-    console.error("Error inserting student:", error);
-    return NextResponse.json(
-      { success: false, message: "Error inserting student" },
-      { status: 500 }
-    );
-  }
-}
+//     return NextResponse.json({ success: true, student }, { status: 201 });
+//   } catch (error) {
+//     console.error("Error inserting student:", error);
+//     return NextResponse.json(
+//       { success: false, message: "Error inserting student" },
+//       { status: 500 }
+//     );
+//   }
+// }
+
+
+
+
 
 
 

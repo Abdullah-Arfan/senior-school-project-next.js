@@ -1,14 +1,14 @@
-// lib/prisma.js
-import { PrismaClient } from "@prisma/client";
+// // lib/prisma.js
+// import { PrismaClient } from "@prisma/client";
 
-const globalForPrisma = globalThis;
+// const globalForPrisma = globalThis;
 
-let prisma;
+// let prisma;
 
-if (!globalForPrisma.prisma) {
-  globalForPrisma.prisma = new PrismaClient();
-}
+// if (!globalForPrisma.prisma) {
+//   globalForPrisma.prisma = new PrismaClient();
+// }
 
-prisma = globalForPrisma.prisma;
+// prisma = globalForPrisma.prisma;
 
-export default prisma;
+// export default prisma;
