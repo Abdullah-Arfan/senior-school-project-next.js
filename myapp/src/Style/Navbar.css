@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind utilities;
 @tailwind components;
 
@@ -67,4 +67,4 @@
     .input-container hr{
         @apply relative left-1 -top-[6px] w-60;
     }
-}
+} */

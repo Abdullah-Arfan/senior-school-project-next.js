@@ -1,10 +1,12 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind utilities;
 @tailwind components;
 
 @layer components{
     /* Section One Styling */
-    .section-one{
+   
+   
+    /* .section-one{
         @apply relative top-28;
     }
     .logo-container{
@@ -12,10 +14,13 @@
     }
     .logo-container h1{
         @apply text-4xl font-semibold relative -left-8;
-    }
+    } */
+    
     /* Section Two Styling */
+   
+   
     .section-two{
-        @apply bg-[#555] h-96 relative -top-[75.5px];
+        /* @apply bg-[#555] h-96 relative -top-[75.5px];
     }        
     .text-container-two h1{
         @apply text-4xl  font-semibold relative left-3;        
@@ -27,12 +32,12 @@
         @apply relative -top-80 -left-5 float-end bg-black w-[500px];
     }
     /* Section Three Styling */
-    .section-three{
+    /* .section-three{
         @apply bg-[#666] relative -top-20;
-    }
+    }  */
 
     /* Section Three's Part One Styling */
-    .inner-container-one{
+    /* .inner-container-one{
         @apply relative left-2;
     }
     .text-container-three-one h1{
@@ -45,7 +50,9 @@
         @apply relative -top-16 left-[130vh] bg-black w-[500px];
     }
     /* Section Three's Part Two Styling */
-    .inner-container-two{
+  
+    /* .inner-container-two{
+  
         @apply relative left-2;
     }
     .text-container-three-two{
@@ -59,9 +66,12 @@
     }
     .image-container-three-two{
         @apply relative -top-16 bg-black w-[500px];
-    }
+    } */
+   
+  
     /* Section Three's Part Three Styling */
-    .inner-container-three{
+   
+    /* .inner-container-three{
         @apply relative left-2;
     }
     .text-container-three-three h1{
@@ -72,9 +82,11 @@
     }
     .image-container-three-three{
         @apply relative -top-16 left-[130vh] bg-black w-[500px];
-    }
+    } */
     /* Section Four Styling */
-    .section-four{
+    
+    
+    /* .section-four{
         @apply bg-[#777] relative -top-20 h-[450px];
     }
     .text-container-four{
@@ -89,4 +101,4 @@
     .image-container-four{
         @apply relative left-2 -top-[300px] bg-black w-[500px];
     }
-}
+}  */
