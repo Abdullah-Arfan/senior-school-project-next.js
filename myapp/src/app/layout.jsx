@@ -1,10 +1,10 @@
 import React from 'react'
-import "./../Style/Global.css"
+import "./../Style/global.css"
 // import "./../Style/Global2.css"
 import Navbar from "../Components/Navbar"
 import Footer from "../Components/Footer"
 
-export default function Rootlayout({ children }) {
+export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body>
