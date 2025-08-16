@@ -1,5 +1,5 @@
 import React from 'react'
-import "./../Style/global.css"
+import "./../style/global.css"
 // import "./../Style/Global2.css"
 import Navbar from "../Components/Navbar"
 import Footer from "../Components/Footer"
