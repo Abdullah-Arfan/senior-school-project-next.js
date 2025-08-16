@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components{
+    /* Section One Styling */
+    .section-one{
+        @apply relative top-28;
+    }
+    .logo-container{
+        @apply relative -top-[630px] left-[90vh] w-96;
+    }
+    .logo-container h1{
+        @apply text-4xl font-semibold relative -left-8;
+    }
+    /* Section Two Styling */
+    .section-two{
+        @apply bg-[#555] h-96 relative -top-[75.5px];
+    }        
+    .text-container-two h1{
+        @apply text-4xl  font-semibold relative left-3;        
+    }
+    .text-container-two p{
+        @apply text-lg/[35px] relative top-7 left-3 w-[775px];        
+    }
+    .image-container-two {
+        @apply relative -top-80 -left-5 float-end bg-black w-[500px];
+    }
+    /* Section Three Styling */
+    .section-three{
+        @apply bg-[#666] relative -top-20;
+    }
+
+    /* Section Three's Part One Styling */
+    .inner-container-one{
+        @apply relative left-2;
+    }
+    .text-container-three-one h1{
+        @apply text-4xl relative top-20;
+    }
+    .text-container-three-one p{
+        @apply text-lg/[35px] w-[775px] relative top-36;
+    }
+    .image-container-three-one{
+        @apply relative -top-16 left-[130vh] bg-black w-[500px];
+    }
+    /* Section Three's Part Two Styling */
+    .inner-container-two{
+        @apply relative left-2;
+    }
+    .text-container-three-two{
+        @apply relative left-[530px];
+    }
+    .text-container-three-two h1{
+        @apply text-4xl relative top-20;
+    }
+    .text-container-three-two p{
+        @apply text-lg/[35px] w-[775px] relative top-36;
+    }
+    .image-container-three-two{
+        @apply relative -top-16 bg-black w-[500px];
+    }
+    /* Section Three's Part Three Styling */
+    .inner-container-three{
+        @apply relative left-2;
+    }
+    .text-container-three-three h1{
+        @apply text-4xl relative top-20;
+    }
+    .text-container-three-three p{
+        @apply text-lg/[35px] w-[775px] relative top-36;
+    }
+    .image-container-three-three{
+        @apply relative -top-16 left-[130vh] bg-black w-[500px];
+    }
+    /* Section Four Styling */
+    .section-four{
+        @apply bg-[#777] relative -top-20 h-[450px];
+    }
+    .text-container-four{
+        @apply relative left-[530px];
+    }
+    .text-container-four h1{
+        @apply text-4xl relative top-8;
+    }
+    .text-container-four p{
+        @apply text-lg/[35px] w-[775px] relative top-12;
+    }
+    .image-container-four{
+        @apply relative left-2 -top-[300px] bg-black w-[500px];
+    }
+}

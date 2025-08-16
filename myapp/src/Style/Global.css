@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+    *{
+        @apply m-0 p-0 font-sans;
+    }
+    body{
+        @apply text-white;
+    }
+    h1{
+        @apply text-4xl;
+    }
+}
+
+@layer components{
+    /* Navbar's Styling */
+    nav {
+        @apply bg-[#000] fixed w-[1351px] h-28 opacity-[0.7] z-[1];
+    }
+    
+    nav:after {
+        @apply content-[''] block clear-both;
+    }
+    .logo img{
+        @apply absolute left-[3px] w-[70px]
+    }
+    nav h2 {
+        @apply float-left relative left-[75px] top-[25px] text-[23px];
+    }
+    .links {
+        @apply relative top-14 left-10;
+    }
+    .links li {
+        @apply inline-block list-none relative;
+    }
+    .links li a {
+        @apply inline-block p-5 no-underline;
+    }
+    .links li:hover .rotate {
+        @apply rotate-180; 
+    }
+    .links li:hover .dropdown {
+        @apply block;
+    }
+    .main-list:hover .main-anchor{
+        @apply text-gray-400;
+    }
+    .rotate{
+        @apply float-end relative top-[5px];
+    }
+    .dropdown li:hover{
+        @apply bg-[#555];
+    }
+    .dropdown {
+        @apply bg-[#111] absolute top-[56px] left-7 hidden w-[250px];
+    } 
+    .dropdown li {
+        @apply border border-x-2 border-[#222] block; 
+    }
+    .input-container{
+        @apply float-end relative -top-11 -left-7;
+    }
+    .input-container input{
+        @apply rounded-md bg-transparent border-[1px] border-white p-[2px] w-64;
+    }
+    .input-container .Search-Icon{
+        @apply absolute top-1 left-56 text-2xl font-extrabold;
+    }  
+    .input-container .Search-Icon:hover{
+        @apply cursor-pointer;
+    }    
+    .input-container hr{
+        @apply relative left-1 -top-[6px] w-60;
+    }
+    /* Section One Styling */
+    .section-one{
+        @apply relative top-28;
+    }
+    .logo-container{
+        @apply relative -top-[630px] left-[90vh] w-96;
+    }
+    .logo-container h1{
+        @apply font-semibold relative -left-8;
+    }
+    /* Section Two Styling */
+    .section-two{
+        @apply bg-[#555] h-96 relative -top-[75.5px];
+    }        
+    .text-container-two h1{
+        @apply  font-semibold relative left-3;        
+    }
+    .text-container-two p{
+        @apply text-lg/[35px] relative top-7 left-3 w-[775px];        
+    }
+    .image-container-two {
+        @apply relative -top-80 -left-5 float-end bg-black w-[500px];
+    }
+    /* Section Three Styling */
+    .section-three{
+        @apply bg-[#666] relative -top-20;
+    }
+
+    /* Section Three's Part One Styling */
+    .inner-container-one{
+        @apply relative left-2;
+    }
+    .text-container-three-one h1{
+        @apply relative top-20;
+    }
+    .text-container-three-one p{
+        @apply text-lg/[35px] w-[775px] relative top-36;
+    }
+    .image-container-three-one{
+        @apply relative -top-16 left-[130vh] bg-black w-[500px];
+    }
+    /* Section Three's Part Two Styling */
+    .inner-container-two{
+        @apply relative left-2;
+    }
+    .text-container-three-two{
+        @apply relative left-[530px];
+    }
+    .text-container-three-two h1{
+        @apply relative top-20;
+    }
+    .text-container-three-two p{
+        @apply text-lg/[35px] w-[775px] relative top-36;
+    }
+    .image-container-three-two{
+        @apply relative -top-16 bg-black w-[500px];
+    }
+    /* Section Three's Part Three Styling */
+    .inner-container-three{
+        @apply relative left-2;
+    }
+    .text-container-three-three h1{
+        @apply relative top-20;
+    }
+    .text-container-three-three p{
+        @apply text-lg/[35px] w-[775px] relative top-36;
+    }
+    .image-container-three-three{
+        @apply relative -top-16 left-[130vh] bg-black w-[500px];
+    }
+
+
+    /* Footer's Styling */
+    .footer{
+        @apply bg-[#777] text-black grid grid-cols-4 h-96 relative top-32;
+    }
+    .first-container,.second-container{
+        @apply relative top-7 left-3;
+    }
+    /* Footer's First Part Styling  */
+    .logo-container-footer{
+        @apply relative left-32;
+    }
+    .logo-text{
+        @apply w-96;
+    }
+    /* Footer's Second Part Styling  */
+    .second-container{
+        @apply relative left-20;
+    }
+    .contact-us{
+        @apply relative left-7;
+    }
+    .contact-us h1{
+        @apply text-3xl relative left-7;
+    }
+    .contact-us li{
+        @apply relative left-8 top-3;
+    }    
+    .contact-us li span{
+        @apply relative -left-3;
+    }
+    .inner-span{
+        @apply relative left-6;
+    }
+    /* Footer's Third Part Styling  */
+    .third-container{
+        @apply relative left-16 top-7;
+    }
+    .useful-links{
+        @apply text-xl relative left-7 top-7 flex flex-col items-start gap-3;
+    }
+    .useful-links Link{
+        @apply relative top-7;
+    }
+    /* Footer's Fourth Part Styling  */
+    .fourth-container{
+        @apply relative top-7;
+    }
+    .important-resources{
+        @apply text-xl relative left-7 top-7 flex flex-col items-start gap-3;
+    }
+    .important-resources Link{
+        @apply relative top-7;
+    }
+    /*About Page Styling*/
+    /* About Page's First Part Stylling */
+    .about-one{
+        @apply bg-[#555] relative top-28 text-center h-[500px];
+    }
+    .grid-box{
+        @apply grid grid-cols-3 relative top-16 left-[60px];
+    }
+    .about-grid{
+        @apply bg-[#333] h-80 w-80 text-center rounded-xl;
+    }
+    .about-one .Image{
+        @apply h-80 w-80 rounded-xl;
+    }
+    .grid-1 p{
+        @apply text-base/7 w-72 relative left-3;
+    }
+    .grid-3 p{
+        @apply text-base/7 w-72 relative left-3;
+    }
+    /* About Page's Second Part Stylling */
+    .about-two{
+        @apply bg-[#666] h-[550px];
+    }
+    .text-container-about-one{
+        @apply relative left-[530px];
+    }
+    .text-container-about-one h1{
+        @apply text-4xl relative top-32;
+    }
+    .text-container-about-one p{
+        @apply text-lg/[35px] w-[775px] relative top-36;
+    }
+    .image-container-about-one{
+        @apply relative left-2 -top-52 bg-black w-[500px];
+    }
+    /* About Page's Third Part Styling */
+    .about-three {
+        @apply w-[100%] bg-[#777] py-[5em] px-0 my-[2em] mx-0 h-96 relative -top-10;
+    }
+    .heading2 {
+        @apply  text-5xl absolute top-16 left-[11cm];
+    }
+    .outer_box{
+        @apply flex justify-between w-[80%] items-center m-auto pt-[4em];
+    }
+    .inner_box{
+        @apply relative top-14;
+    }
+    .inner_box h1 {
+        @apply py-3 px-0 text-[2.7em];
+    }
+    /* About Page's Fourt Part Styling */
+    .about-four{
+        @apply bg-[#888];
+    } 
+    .box-container{
+        @apply grid grid-cols-2 relative left-[60px] py-5;
+    }
+    .box{
+        @apply grid grid-cols-2 gap-10 bg-[#333] w-[550px] h-[200px] border-2 border-white;
+    }   
+    .image-section-box{
+        @apply w-48 h-48 relative left-5 top-5;
+    }
+}

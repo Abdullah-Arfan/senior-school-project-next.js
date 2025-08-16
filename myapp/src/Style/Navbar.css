@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+    *{
+        @apply m-0 p-0 font-sans;
+    }
+}
+
+@layer components{
+    nav {
+        @apply bg-[#000] fixed w-[1351px] h-28 opacity-[0.7] z-[1];
+    }
+    
+    nav:after {
+        @apply content-[''] block clear-both;
+    }
+    .logo img{
+        @apply absolute left-[3px] w-[70px]
+    }
+    nav h2 {
+        @apply float-left relative left-[75px] top-[25px] text-[23px];
+    }
+    .links {
+        @apply relative top-14 left-10;
+    }
+    .links li {
+        @apply inline-block list-none relative;
+    }
+    .links li a {
+        @apply inline-block p-5 no-underline;
+    }
+    .links li:hover .rotate {
+        @apply rotate-180; 
+    }
+    .links li:hover .dropdown {
+        @apply block;
+    }
+    .main-list:hover .main-anchor{
+        @apply text-gray-400;
+    }
+    .rotate{
+        @apply float-end relative top-[5px];
+    }
+    .dropdown li:hover{
+        @apply bg-[#555];
+    }
+    .dropdown {
+        @apply bg-[#111] absolute top-[56px] left-7 hidden w-[250px];
+    } 
+    .dropdown li {
+        @apply border border-x-2 border-[#222] block; 
+    }
+    .input-container{
+        @apply float-end relative -top-11 -left-7;
+    }
+    .input-container input{
+        @apply rounded-md bg-transparent border-[1px] border-white p-[2px] w-64;
+    }
+    .input-container .Search-Icon{
+        @apply absolute top-1 left-56 text-2xl font-extrabold;
+    }  
+    .input-container .Search-Icon:hover{
+        @apply cursor-pointer;
+    }    
+    .input-container hr{
+        @apply relative left-1 -top-[6px] w-60;
+    }
+}

@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components{
+    .about-four{
+        @apply bg-[#888]
+    }
+    
+}
